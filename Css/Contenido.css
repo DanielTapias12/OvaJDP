@@ -8,7 +8,79 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-/**/
+
+/* ICONOS PARA COMPARTIR LA PAGINA */
+.icons {
+	margin: 15px;
+    display: flex;
+	column-gap: 21px;
+}
+.icon {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--github:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
+
+/* -----------*/
+
+
+
+
+
+/*Acomodar el texto con la imagen*/
 .textoallado {
     display: flex;
     justify-content: center;
@@ -19,9 +91,11 @@
     margin-right: 15px;
     text-align: justify;
 }
-.txt > p > a{
+
+.txt>p>a {
     text-decoration: none;
 }
+
 /*-----*/
 
 
@@ -55,34 +129,35 @@ header {
     background: aquamarine;
 }
 
-body{
+body {
     display: flex;
-min-height: 100vh;
-margin: 0;
-gap: 20px;
-font-size: 16px;
-box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    gap: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 
 /* estructura del menu*/
-:root{
+:root {
     --estado-buda: 0.3s;
     --cada-item: 40px;
-    --cantidad-items:0;
+    --cantidad-items: 0;
 }
-nav ul{
+
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     line-height: 16px;
 }
 
-nav ul li{
+nav ul li {
     border-bottom: 1px solid gray;
 }
 
-nav ul a{
+nav ul a {
     box-sizing: border-box;
     color: black;
     display: block;
@@ -91,25 +166,27 @@ nav ul a{
     text-decoration: none;
     text-transform: uppercase;
 }
+
 /*Este es*/
-nav ul ul{
+nav ul ul {
     height: 0px;
     overflow: hidden;
     transition: var(--estado-buda);
 }
 
 
-nav ul li:hover ul{
-    height: calc( var(--cantidad-items) * var(--cada-item) );
+nav ul li:hover ul {
+    height: calc(var(--cantidad-items) * var(--cada-item));
     background: rgb(197, 197, 205);
-     background: linear-gradient(90deg, rgb(156, 80, 94)0%,rgb(72, 128, 175)35%, rgba(0,212,255,1)100%);
+    background: linear-gradient(90deg, rgb(156, 80, 94)0%, rgb(72, 128, 175)35%, rgba(0, 212, 255, 1)100%);
 }
 
 
-nav ul ul a{
+nav ul ul a {
     background: transparent;
     color: white;
 }
+
 /*-------------------------------------------------------*/
 
 
@@ -121,7 +198,7 @@ nav ul ul a{
 }*/
 /*Tamaño del objeto
 .logo {*/
-    /* Altura
+/* Altura
     width: 45px;
 }*/
 /*-------------*/
@@ -137,6 +214,7 @@ nav ul ul a{
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
 }
+
 /* ------------------------ */
 
 /*Tarjeta*/
@@ -155,6 +233,7 @@ header.fondo {
     background-size: cover;
     background-position: center;
 }
+
 /* --------------------------- */
 
 
@@ -217,9 +296,10 @@ header.fondo {
     text-align: justify;
 }
 
-a.raya{
+a.raya {
     text-decoration: none;
 }
+
 /* ----------------------------- */
 
 
@@ -248,8 +328,5 @@ p.tex {
     background: white;
     color: black;
 }
+
 /* --------------------------------------- */
-
-
-
-
