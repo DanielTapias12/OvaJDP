@@ -1,0 +1,255 @@
+* {
+    /* Relleno de los cuatro lados*/
+    padding: 0;
+    /* margenes de los cuatro lados */
+    margin: 0;
+    /* Define el tipo de lista*/
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/**/
+.textoallado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    margin-right: 15px;
+    text-align: justify;
+}
+.txt > p > a{
+    text-decoration: none;
+}
+/*-----*/
+
+
+/*Teclado*/
+span {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 29ch;
+    animation: typing 2s steps(29), blink .6s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/*----*/
+
+
+header {
+    width: 200px;
+    background: aquamarine;
+}
+
+body{
+    display: flex;
+min-height: 100vh;
+margin: 0;
+gap: 20px;
+font-size: 16px;
+box-sizing: border-box;
+}
+
+
+/* estructura del menu*/
+:root{
+    --estado-buda: 0.3s;
+    --cada-item: 40px;
+    --cantidad-items:0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul li{
+    border-bottom: 1px solid gray;
+}
+
+nav ul a{
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 3.6px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*Este es*/
+nav ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+}
+
+
+nav ul li:hover ul{
+    height: calc( var(--cantidad-items) * var(--cada-item) );
+    background: rgb(197, 197, 205);
+     background: linear-gradient(90deg, rgb(156, 80, 94)0%,rgb(72, 128, 175)35%, rgba(0,212,255,1)100%);
+}
+
+
+nav ul ul a{
+    background: transparent;
+    color: white;
+}
+/*-------------------------------------------------------*/
+
+
+/* El tamaño y dirección del logo
+.enlace {
+    position: static;
+    padding: 10px 30px;
+    float:unset;
+}*/
+/*Tamaño del objeto
+.logo {*/
+    /* Altura
+    width: 45px;
+}*/
+/*-------------*/
+
+
+/* Definicion del fondo (imagen)*/
+.cubrir {
+    height: 400px;
+    background-image: url(../Imagenes/Fondo.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+/* ------------------------ */
+
+/*Tarjeta*/
+header.fondo {
+    background: cadetblue;
+
+}
+
+.card {
+    border: 0 !important;
+    margin: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+}
+/* --------------------------- */
+
+
+
+
+/* Pestañas (tabs) */
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 0px;
+
+}
+
+.lbl-menu {
+    background: #234;
+
+}
+
+.lbl-menu label {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.lbl-menu label:hover {
+    background: #28435d;
+
+}
+
+.content {
+    position: relative;
+}
+
+.content div {
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: white;
+    padding-bottom: 40px;
+}
+
+#radio1,
+#radio2 {
+    display: none;
+    height: auto;
+}
+
+#radio1:checked~.tab1,
+#radio2:checked~.tab2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    text-align: justify;
+}
+
+a.raya{
+    text-decoration: none;
+}
+/* ----------------------------- */
+
+
+/* Acordeon */
+section.Acordeon {
+    width: 700px;
+    padding: 40px;
+    background: rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary {
+    background: rgb(0, 110, 255);
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+}
+
+p.tex {
+    padding: 10px;
+    background: white;
+    color: black;
+}
+/* --------------------------------------- */
+
+
+
+

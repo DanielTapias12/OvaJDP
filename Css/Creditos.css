@@ -1,0 +1,58 @@
+:root{
+    --estado-buda: 0.3s;
+    --cada-item: 28px;
+    --cantidad-items:0;
+}
+body{
+    display: flex;
+min-height: 100vh;
+margin: 0;
+gap: 30px;
+font-size: 16px;
+}
+
+header{
+    width: 200px;
+    background:rgba(67, 91, 91, 0.322);
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul li{
+    border-bottom: 1px solid gray;
+}
+
+nav ul a{
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 3.7px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul ul{
+    height: 0px;
+    overflow: hidden;
+    transition: var(--estado-buda);
+}
+
+
+nav ul li:hover ul{
+    height: calc( var(--cantidad-items) * var(--cada-item) );
+    background: rgb(197, 197, 205);
+     background: linear-gradient(90deg, rgb(156, 80, 94)0%,rgb(72, 128, 175)35%, rgba(0,212,255,1)100%);
+}
+
+
+nav ul ul a{
+    background: transparent;
+    color: white;
+}
