@@ -3,11 +3,14 @@
     padding: 0;
     /* margenes de los cuatro lados */
     margin: 0;
-    /* Define el tipo de lista*/
-    list-style: none;
+  
     font-family: 'Times New Roman', Times, serif;
 }
 
+main > ol.lis{ 
+     /* Define el tipo de lista*/
+    list-style: none;
+}
 
 /* ICONOS PARA COMPARTIR LA PAGINA */
 .icons {
