@@ -69,6 +69,7 @@ body {
     gap: 1px;
     font-size: 16px;
     box-sizing: border-box;
+    text-align: justify;
 }
 
 
@@ -237,7 +238,7 @@ a.raya {
 
 
 
-/* Acordeon */
+/* Acordeon 1 */
 section.Acordeon {
     width: auto;
     padding: 40px;
@@ -250,7 +251,7 @@ section.Acordeon {
     gap: 20px;
 }
 
-summary {
+summary.prim {
     background: rgb(0, 110, 255);
     text-transform: uppercase;
     list-style: none;
@@ -262,6 +263,38 @@ p.tex {
     padding: 10px;
     background: white;
     color: black;
+    text-align: justify;
+}
+
+/* --------------------------------------- */
+
+
+/* Acordeon 2 */
+section.acor {
+    width: auto;
+    padding: 40px;
+    background: rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary.segundo {
+    background: rgb(50, 168, 186);
+    text-transform: uppercase;
+    list-style: none;
+    color: white;
+    padding: 20px;
+}
+
+p.text {
+    padding: 10px;
+    background: white;
+    color: black;
+    text-align: justify;
 }
 
 /* --------------------------------------- */
