@@ -3,7 +3,7 @@
     padding: 0;
     /* margenes de los cuatro lados */
     margin: 0;
-  
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -22,7 +22,7 @@ main > ol.lis{
 
 .txt {
     margin-right: 15px;
-    text-align: justify;
+    
 }
 
 .txt>p>a {
@@ -32,13 +32,37 @@ main > ol.lis{
 /*-----*/
 
 
-/*Teclado*/
-span {
+/*Teclado Encabezado*/
+span.encabezado {
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 28.5ch;
     animation: typing 2s steps(29), blink .6s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/*----*/
+
+/*Teclado Bienvenida*/
+span.bienvenida {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 41.1ch;
+    animation: typing 2s steps(48), blink .6s infinite step-end alternate;
     overflow: hidden;
 }
 
@@ -69,7 +93,7 @@ body {
     gap: 1px;
     font-size: 16px;
     box-sizing: border-box;
-    text-align: justify;
+    
 }
 
 
@@ -174,6 +198,7 @@ header.fondo {
 
 
 /* Pestañas (tabs) */
+/* Contiene todo el formato*/
 .container {
     width: 100%;
     max-width: 700px;
@@ -194,16 +219,16 @@ header.fondo {
     cursor: pointer;
     transition: all 400ms ease;
 }
-
+/* segundo estado*/
 .lbl-menu label:hover {
-    background: #28435d;
+    background: #97a5b2;
 
 }
 
 .content {
     position: relative;
 }
-
+/* Maneja la ventaja de información*/
 .content div {
     position: absolute;
     line-height: 1.8;
@@ -227,7 +252,7 @@ header.fondo {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    text-align: justify;
+    
 }
 
 a.raya {
@@ -263,7 +288,7 @@ p.tex {
     padding: 10px;
     background: white;
     color: black;
-    text-align: justify;
+    
 }
 
 /* --------------------------------------- */
@@ -294,10 +319,8 @@ p.text {
     padding: 10px;
     background: white;
     color: black;
-    text-align: justify;
+
 }
 
 /* --------------------------------------- */
 
-
-/* tendencias y estadisticas el texto */
