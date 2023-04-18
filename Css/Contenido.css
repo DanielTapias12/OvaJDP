@@ -227,6 +227,7 @@ header.fondo {
     visibility: visible;
     transform: scale(1);
     text-align: justify;
+    position: absolute;
 }
 
 a.raya {
@@ -263,7 +264,7 @@ p.tex {
     background: white;
     color: black;
 }
-
+}
 /* --------------------------------------- */
 
 
