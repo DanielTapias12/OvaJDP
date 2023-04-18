@@ -252,7 +252,12 @@ header.fondo {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+<<<<<<< HEAD
+    text-align: justify;
+    position: absolute;
+=======
     
+>>>>>>> 97d2fb5d1c435e77bcfcc7bb4f2b274b45f1bd20
 }
 
 a.raya {
@@ -290,7 +295,7 @@ p.tex {
     color: black;
     
 }
-
+}
 /* --------------------------------------- */
 
 
