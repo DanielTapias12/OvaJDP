@@ -3,7 +3,7 @@
     padding: 0;
     /* margenes de los cuatro lados */
     margin: 0;
-  
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -22,7 +22,7 @@ main > ol.lis{
 
 .txt {
     margin-right: 15px;
-    text-align: justify;
+    
 }
 
 .txt>p>a {
@@ -32,13 +32,37 @@ main > ol.lis{
 /*-----*/
 
 
-/*Teclado*/
-span {
+/*Teclado Encabezado*/
+span.encabezado {
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 28.5ch;
     animation: typing 2s steps(29), blink .6s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/*----*/
+
+/*Teclado Bienvenida*/
+span.bienvenida {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 41.1ch;
+    animation: typing 2s steps(48), blink .6s infinite step-end alternate;
     overflow: hidden;
 }
 
@@ -69,6 +93,7 @@ body {
     gap: 1px;
     font-size: 16px;
     box-sizing: border-box;
+    
 }
 
 
@@ -173,6 +198,7 @@ header.fondo {
 
 
 /* Pestañas (tabs) */
+/* Contiene todo el formato*/
 .container {
     width: 100%;
     max-width: 700px;
@@ -193,16 +219,16 @@ header.fondo {
     cursor: pointer;
     transition: all 400ms ease;
 }
-
+/* segundo estado*/
 .lbl-menu label:hover {
-    background: #28435d;
+    background: #97a5b2;
 
 }
 
 .content {
     position: relative;
 }
-
+/* Maneja la ventaja de información*/
 .content div {
     position: absolute;
     line-height: 1.8;
@@ -226,8 +252,12 @@ header.fondo {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+<<<<<<< HEAD
     text-align: justify;
     position: absolute;
+=======
+    
+>>>>>>> 97d2fb5d1c435e77bcfcc7bb4f2b274b45f1bd20
 }
 
 a.raya {
@@ -238,7 +268,7 @@ a.raya {
 
 
 
-/* Acordeon */
+/* Acordeon 1 */
 section.Acordeon {
     width: auto;
     padding: 40px;
@@ -251,7 +281,7 @@ section.Acordeon {
     gap: 20px;
 }
 
-summary {
+summary.prim {
     background: rgb(0, 110, 255);
     text-transform: uppercase;
     list-style: none;
@@ -263,9 +293,39 @@ p.tex {
     padding: 10px;
     background: white;
     color: black;
+    
 }
 }
 /* --------------------------------------- */
 
 
-/* tendencias y estadisticas el texto */
+/* Acordeon 2 */
+section.acor {
+    width: auto;
+    padding: 40px;
+    background: rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary.segundo {
+    background: rgb(50, 168, 186);
+    text-transform: uppercase;
+    list-style: none;
+    color: white;
+    padding: 20px;
+}
+
+p.text {
+    padding: 10px;
+    background: white;
+    color: black;
+
+}
+
+/* --------------------------------------- */
+
