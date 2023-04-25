@@ -29,7 +29,7 @@ main > ol.lis{
     text-decoration: none;
 }
 
-/*-----*/
+/*--------------------------------*/
 
 
 /*Teclado Encabezado*/
@@ -90,17 +90,20 @@ body {
     display: flex;
     min-height: 100vh;
     margin: 0;
+
     gap: 1px;
     font-size: 16px;
     box-sizing: border-box;
     
 }
-
+ main.secu{
+    padding: 15px;
+ }
 
 /* estructura del menu*/
 :root {
     --estado-buda: 0.3s;
-    --cada-item: 40px;
+    --cada-item: 35.5px;
     --cantidad-items: 0;
 }
 
@@ -197,7 +200,208 @@ header.fondo {
 
 
 
-/* Pestañas (tabs) */
+/* Pestañas (tabs) 1 */
+
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*Fun begins*/
+.tab_container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
+}
+
+input, section.tab-content {
+    clear: both;
+    padding-top: 10px;
+    display: none;
+}
+label {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 1.5em;
+    color: #121111;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #f0f0f0;
+}
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    color: #0f0d0d;
+    border-bottom: 2px solid #f0f0f0;
+}
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+    -webkit-animation: fadeInScale 0.7s ease-in-out;
+    -moz-animation: fadeInScale 0.7s ease-in-out;
+    animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container > .tab-content > h3 {
+    text-align: center;
+}
+.tab_container [id^="tab"]:checked+label {
+    background: #fff;
+    box-shadow: inset 0 3px #0CE;
+}
+.tab_container [id^="tab"]:checked+label .fa {
+    color: #0CE;
+}
+label .fa {
+    font-size: 1.3em;
+    margin: 0 0.4em 0 0;
+}
+/*Media query*/
+@media only screen and (max-width: 900px) {
+    label span {
+        display: none;
+    }
+    .tab_container {
+        width: 98%;
+    }
+}
+/*Content Animation*/
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.link {
+    text-align: center;
+}
+/* ----------------------------------------*/
+
+/* pestaña (tabs) 2 */
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*Fun begins*/
+.tab_c {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
+}
+
+input, section.tab-conten {
+    clear: both;
+    padding-top: 10px;
+    display: none;
+}
+label {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 1.5em;
+    color: #121111;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #f0f0f0;
+}
+#ta1:checked~#conten1,
+#ta2:checked~#conten2,
+#ta3:checked~#conten3,
+#ta4:checked~#conten4,
+#ta5:checked~#conten5 {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    color: #0f0d0d;
+    border-bottom: 2px solid #f0f0f0;
+}
+.tab_c .tab-conten p,
+.tab_c .tab-conten h3 {
+    -webkit-animation: fadeInScale 0.7s ease-in-out;
+    -moz-animation: fadeInScale 0.7s ease-in-out;
+    animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_c > .tab-conten > h3 {
+    text-align: center;
+}
+.tab_c [id^="ta"]:checked+label {
+    background: #fff;
+    box-shadow: inset 0 3px #0CE;
+}
+.tab_c [id^="ta"]:checked+label .fa {
+    color: #0CE;
+}
+label .fa {
+    font-size: 1.3em;
+    margin: 0 0.4em 0 0;
+}
+/*Media query*/
+@media only screen and (max-width: 900px) {
+    label span {
+        display: none;
+    }
+    .tab_c {
+        width: 98%;
+    }
+}
+/*Content Animation*/
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.link {
+    text-align: center;
+}
+
+/* ---------------------------------------*/
+
 /* Contiene todo el formato*/
 .container {
     width: 100%;
