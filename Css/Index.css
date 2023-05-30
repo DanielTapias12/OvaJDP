@@ -1,9 +1,11 @@
+
 /* texto del cuerpo*/
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     /*el ancho y largo de un elemento, que tenga en cuenta cada borde y relleno*/
     box-sizing: border-box;
+    background-color: #8eb8ff;
 }
 /*Sobre todo*/
  * {
@@ -79,6 +81,28 @@ nav ul li{
 }*/
 /* Mover texto hacia abajo*/
 div.parte2{  
+ 
+   width: 70%;
 
-   transform: translate(1%,42%);
 }
+div.parte2.mano{
+    height: 300px;
+    float left;
+}
+.sujeto{
+    position: ;
+    height: 400px;
+    right: 7%;
+    bottom: 0;
+    z-index: 99;
+}
+
+.container{
+    
+    width: 30%;
+   
+}
+#todo{
+    transform: translate(1%,28% );
+    display: flex;
+    padding:30 px;
