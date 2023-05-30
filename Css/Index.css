@@ -3,9 +3,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    /*el ancho y largo de un elemento, que tenga en cuenta cada borde y relleno*/
+    background-image: url(/ovaJdp/Imagenes/5559852.jpg);
+    background-size: no-repeat;
+    background-size: cover;
+    /*el ancho y largo de un elemento, que tes venga en cuenta cada borde y relleno*/
     box-sizing: border-box;
     background-color: #8eb8ff;
+
 }
 /*Sobre todo*/
  * {
@@ -81,28 +85,22 @@ nav ul li{
 }*/
 /* Mover texto hacia abajo*/
 div.parte2{  
- 
+    text-align: justify;
+    padding-top: 6.8%;
+    padding-right: 5%;
    width: 70%;
 
 }
-div.parte2.mano{
-    height: 300px;
-    float left;
-}
-.sujeto{
-    position: ;
-    height: 400px;
-    right: 7%;
-    bottom: 0;
-    z-index: 99;
-}
-
-.container{
-    
-    width: 30%;
+.parte1{
+    margin-right: 0;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    right: 13px;
    
 }
 #todo{
     transform: translate(1%,28% );
     display: flex;
     padding:30 px;
+}
