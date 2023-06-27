@@ -1,60 +1,20 @@
-:root{
-    --estado-buda: 0.3s;
-    --cada-item: 28px;
-    --cantidad-items:0;
-}
-body{
-    display: flex;
-min-height: 100vh;
-margin: 0;
-gap: 30px;
-font-size: 16px;
-}
-
-header{
-    width: 200px;
-    background:rgba(67, 91, 91, 0.322);
-
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 16px;
-}
-
-nav ul li{
-    border-bottom: 1px solid gray;
-}
-
-nav ul a{
-    box-sizing: border-box;
-    color: black;
-    display: block;
+.navbar {
+    background-color: #77b4e9; /* Fondo azul bajito */
+    position: fixed; /* Fija en la parte superior */
+    top: 0;
     width: 100%;
-    padding: 3.7px 10px;
-    text-decoration: none;
-    text-transform: uppercase;
+    height: 10%;
+  }
+  
+.navbar-logo {
+      display: flex; /* Permite flexibilidad en la altura */
+      align-items: center; /* Centra verticalmente el logo */
 }
 
-nav ul ul{
-    height: 0px;
-    overflow: hidden;
-    transition: var(--estado-buda);
-}
+  .navbar-brand {
+    margin-left: 20px; /* Espacio para el logo flotante a la izquierda */
+  }
 
-
-nav ul li:hover ul{
-    height: calc( var(--cantidad-items) * var(--cada-item) );
-    background: rgb(197, 197, 205);
-     background: linear-gradient(90deg, rgb(156, 80, 94)0%,rgb(72, 128, 175)35%, rgba(0,212,255,1)100%);
-}
-
-
-nav ul ul a{
-    background: transparent;
-    color: white;
-}
-
-
+  .navbar-menu {
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  }

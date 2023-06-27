@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comercio Electronico - Creditos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="icon" href="./Imagenes/Logo.ico">
     <link rel="stylesheet" href="./Css/Creditos.css">
 
@@ -14,100 +15,25 @@
 <body>
 
     <header>
-   
-        <nav>
-            <ul>
-                <li><a class="active" href="./Index.html">Inicio</a></li>
-                <li><a href="./Contenidos.html">Contenido</a>
-                    <ul style="--cantidad-items:6">
-                        <li><a href="#Que_es">Que es el comercio electronico</a></li>
-                        <li><a href="#VyD">Ventajas y desventajas</a></li>
-                        <li><a href="#Tipos">Tipos de comercio electronico</a></li>
-                        <li><a href="#Tendencias_y_estadisticas">Tendencias</a></li>
-                        <li><a href="#Conclusion">Conclusión</a></li>
-                    </ul>
-                </li>
-                <li><a href="./Actividades.html">Actividades</a></li>
-                <li><a href="./Creditos.html">Creditos</a></li>
-                <li><a href="./Evaluacion.html">Evalución</a></li>
-                <li><a href="./MaterialComplementario.html">Material Complementario</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item navbar-logo" href="#">
+                  <img src="./Imagenes/logo copia.png" alt="Logo" height="300px">
+                </a>
+              </div>
+        
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Index.html">Inicio</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Contenidos.html">Contenido</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Actividades.html">Actividades</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Creditos.html">Creditos</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Evaluacion.html">Evalución</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./MaterialComplementario.html">Material Complementario</a>
+              </div>
+            </div>
+          </nav>
     </header>
-
-
-    <div class="mytabs">
-        <input type="radio" id="tabfree" name="mytabs" checked="checked">
-        <label for="tabfree">Free</label>
-        <div class="tab">
-          <h2>Free</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    
-        <input type="radio" id="tabsilver" name="mytabs">
-        <label for="tabsilver">Silver</label>
-        <div class="tab">
-          <h2>Silver</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-    
-        <input type="radio" id="tabgold" name="mytabs">
-        <label for="tabgold">Gold</label>
-        <div class="tab">
-          <h2>Gold</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-    
-      </div>
-
-      <style>
-
-        .mytabs {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 25px;
-        }
-        .mytabs input[type="radio"] {
-            display: none;
-        }
-        .mytabs label {
-            padding: 25px;
-            background:bisque;
-            font-weight: bold;
-        }
-        
-        .mytabs .tab {
-            width: 100%;
-            padding: 20px;
-            background:darkturquoise;
-            order: 1;
-            display: none;
-        }
-        .mytabs .tab h2 {
-            font-size: 3em;
-        }
-        
-        .mytabs input[type='radio']:checked + label + .tab {
-            display: block;
-        }
-        
-        .mytabs input[type="radio"]:checked + label {
-            background: #fff;
-        }
-
-
-</style>
-
-
-    <main>
-    <h1>Comercio Electronico - Creditos</h1>
-    <p>Bienvido a la introducción sobre Comercio Electronico</p>
-    </main>
-    
-
 </body>
 
 </html>
