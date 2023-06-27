@@ -4,48 +4,45 @@
 
 <img align='right' src='http://www.jenyalestina.com/blog/wp-content/uploads/2019/05/web-development-1024x582.jpg' width='300"'>
 
-¡Bienvenido a mi GitHub! 
+¡Bienvenido a nuestro GitHub! 
 
-    Soy Daniel Tapias, estudiante de licenciatura en informática y junto a mis compañeros Jeider Gomez y Pedro Mendivil. Estamos desarrollando un programa sobre Comercio Electrónico, esto es lo que estamod desarrollando en la página por medio de Visual Studio: Portada, Información Basica, Actividades, Evalución y Creditos; esto se estan desarrollando con HTML, CSS y JavaScrip, código que se esta utilizando propio y además sacados de un framework como Bulma y Bootstrap. 
+    Los desarrolladores del proyecto son Daniel Tapias, Jeider Gomez y Pedro Mendivil, estudiantes de licenciatura en informática del curso Fundamentos de Algoritmia, estamos desarrollando un programa del tema Comercio Electrónico.
+  
+### ✔️ El lenguaje que estamos empleando es el siguiente: 
+<img align="right" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="400" height="300">
 
-[![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://www.youtube.com/watch?v=SDkAGkd4NLc)
+- HTML5.
+- CSS.
+- JavaScript.
+
+Dicho lenguaje se desarrolla en <strong> Visual Studio. </strong> 
+
+### ⚡ Docente:
+- Juan Carlos Giraldo Cardozo.
+
+Es la persona que nos ha estado apoyando y orientando en el desarrollo del proyecto.
 
 <img align='right' src='https://github.com/Rishit-dagli/Rishit-dagli/blob/master/images/octocat-anime.gif' width='75"'>
-<img align="right" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="500" height="400">
+
+### 🛠 La página contiene lo siguiente: 
+- Portada (Inicio).
+- Información Básica (Contenido).
+- Actividades (Desarrolladas en H5P).
+- Evaluación.
+- Creditos.
+- Material Complementario.
+
+### 💡 Programación:
+- Se desarrollo el HTML y CSS por medio de videos y páginas, además se utilizo framework como Bulma y Bootstrap, enseñados por el Docente Juan Carlos Giraldo Cardozo, quien nos a instruido en la enseñanza de los anteriores lenguajes mencionados, además de como implementar un framework en el página.
+- JavaScript, utilizado en la Evaluación.
 
 
-actualmente estoy aprendiendo
-- Kotlin (desarrollo de Android)
-- Java (aplicaciones de escritorio)
-😍 Lo que me gusta hacer:
-Me gustan los retos, aprender, LOS PROBLEMAS LÓGICOS, ayudar, compartir y vivir!!!
-💡 Objetivos para 2020:
-Terminar mi primera aplicación en Android y publicarla en Play Store
-Aprenda los conceptos básicos de JavaScript, TypeScript
-Hágase experto en Java, kotlin
-crecer como persona
-⚡ Logro relevante
-Ingresa a la universidad distrital Francisco José de Caldas a muy bajo costo
-🛠 Interesado en:
-Escritorio, móvil, fronted, devOps, juegos, diseñador.
-### ✔️ I'm currently learning
-- Kotlin (android development)
-- Java (desktop apps)
 
-### 😍 What i like to do:
-- I like challenges, learning, LOGICAL PROBLEMS, helping, sharing and living !!!
 
-### 💡 Goals for 2020:
-- Finish my first app on android and publish it on play store
-- Learn the basics of JavaScript, TypeScript
-- Become skilled in Java, kotlin
-- Grow as a person
 
-### ⚡ Relevant achievement
-- Enter the Francisco José de Caldas district university at a very low cost
 
-### 🛠 Interested in:
-- Desktop, mobile, fronted, devOps, games, designer.
+
+[![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://www.youtube.com/watch?v=SDkAGkd4NLc)
 
 
 
