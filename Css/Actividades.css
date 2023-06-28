@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
 /* texto del cuerpo*/
 body {
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     /*el ancho y largo de un elemento, que tenga en cuenta cada borde y relleno*/
     box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
 /*Maneja el borde del menu*/
 nav {
     /* Define el color de los elementos */
-    background:aquamarine;
+    background: #3845DB;
     /* Define la altura */
     height: 70px;
     /* Define el ancho*/ 
@@ -56,8 +56,8 @@ nav a {
  ul a.active, 
  /* hover: efectua un segundo estado*/
  ul a:hover {
- background-color: blue;
- color: aliceblue;
+    background-color: #DB860B;
+    color: #F2F2F2;
     transition: .5s;
 }
 /*Posición de los elementos*/
@@ -128,7 +128,7 @@ nav ul li{
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    
+    width: 97%;
 }
 
 a.raya {

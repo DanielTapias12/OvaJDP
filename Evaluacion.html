@@ -5,23 +5,251 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Analytics - Evaluación</title>
+    <title>Comercio Electrónico - Evaluación</title>
     <link rel="icon" href="./Imagenes/Logo.ico">
+    <link rel="stylesheet" href="./Css/Examen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
+        </style>
 </head>
 
 <body>
-    <nav>
-        <a href="./Index.html">Inicio</a>
-        <a href="./Contenidos.html">Contenido</a>
-        <a href="./Actividades.html">Actividades</a>
-        <a href="./Creditos.html">Creditos</a>
-        <a href="./Evaluacion.html">Evalución</a>
-        <a href="./MaterialComplementario.html">Material Complementario</a>
+    <nav class="navbar" style="background-color: #3845DB;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./Imagenes/logo copia.png" alt="Bulma: a modern CSS framework based on Flexbox" width="95"
+                    height="24">
+            </a>
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" style="background-color: #F2F2F2;" href="./Index.html">
+                    INICIO
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-active" href="./Evaluacion.html">
+                        EVALUACIÓN
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="./Contenidos.html">
+                            CONTENIDO
+                        </a>
+                        <a class="navbar-item" href="./Actividades.html">
+                            ACTIVIDADES
+                        </a>
+
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="./MaterialComplementario.html">
+                            MATERIAL COMPLEMENTARIO
+                        </a>
+                        <a class="navbar-item" href="./Creditos.html">
+                            CREDITOS
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </nav>
 
-    <h1>Learning Analytics - Evaluación</h1>
-    <p>Bienvido a la introducción sobre Learning Analytics</p>
 
+    <script src="./Js/Evaluación.js"></script>
+
+
+
+    <section class="section container">
+
+        <h1 class="title">Pregunta de la <strong>evaluación</strong></h1>
+
+        <p class="subtitle">El examen a realizar medira el nivel de conocimiento adquirido del estudiante
+            sobre el tema Comercio Electrónico.
+        </p>
+
+        <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+            <div class="column">
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes opciones describe mejor el concepto de comercio
+                        electrónico?</p>
+
+                    <a class="panel-block" onclick="sele(this)">La venta de bienes
+                        y servicios a través de canales tradicionales.</a>
+                    <a class="panel-block" onclick="sele(this)">El intercambio de
+                        información entre empresas mediante sistemas de telecomunicaciones.</a>
+                    <a id="correcta1" class="panel-block" onclick="sele(this)">El uso de internet
+                        y otras tecnologías para realizar transacciones comerciales.</a>
+                    <a class="panel-block" onclick="sele(this)">La creación de
+                        redes sociales para promocionar productos y servicios.</a>
+                    <p id="mensaje1" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos1"></p>
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes ventajas es típica del comercio electrónico?</p>
+
+                    <a class="panel-block" onclick="selec(this)">Mayor tiempo de
+                        entrega de los productos.</a>
+                    <a class="panel-block" onclick="selec(this)">Menor variedad de
+                        productos disponibles para los consumidores.</a>
+                    <a class="panel-block" onclick="selec(this)">Menor seguridad en
+                        el proceso de pago.</a>
+                    <a id="correcta2" class="panel-block" onclick="selec(this)">Mayor facilidad
+                        para comparar precios y características de productos.</a>
+                    <p id="mensaje2" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos2"></p>
+
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes opciones representa un ejemplo de comercio
+                        electrónico B2C
+                        (Business-to-Consumer)?</p>
+
+                    <a class="panel-block" onclick="selecc(this)">Una empresa que
+                        compra suministros de oficina a través de internet.</a>
+                    <a id="correcta3" class="panel-block" onclick="selecc(this)">Un individuo que
+                        realiza una compra en línea en un sitio web de comercio electrónico.</a>
+                    <a class="panel-block" onclick="selecc(this)">Una empresa que
+                        contrata servicios de consultoría a través de un sitio web especializado.</a>
+                    <a class="panel-block" onclick="selecc(this)">Un individuo que
+                        vende artículos de segunda mano en un sitio web de subastas.</a>
+                    <p id="mensaje3" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos3"></p>
+
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes medidas es esencial para garantizar la seguridad en
+                        las transacciones de
+                        comercio electrónico?</p>
+
+                    <a id="correcta4" class="panel-block" onclick="selecci(this)">Utilizar
+                        conexiones seguras (HTTPS) al realizar transacciones en línea.</a>
+                    <a class="panel-block" onclick="selecci(this)">Utilizar
+                        contraseñas fáciles de recordar para acceder a las cuentas.</a>
+                    <a class="panel-block" onclick="selecci(this)">Proporcionar
+                        información financiera confidencial por correo electrónico.</a>
+                    <a class="panel-block" onclick="selecci(this)">Compartir la
+                        información de inicio de sesión con amigos y familiares.</a>
+                    <p id="mensaje4" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos4"></p>
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes opciones describe mejor el modelo de negocio
+                        conocido como dropshipping?</p>
+
+                    <a class="panel-block" onclick="seleccio(this)">Un modelo en el
+                        que los productos se fabrican en el país de destino para reducir costos de transporte.</a>
+                    <a id="correcta5" class="panel-block" onclick="seleccio(this)">Un modelo en el
+                        que los productos se envían directamente del fabricante al cliente final sin pasar por el
+                        vendedor.</a>
+                    <a class="panel-block" onclick="seleccio(this)">Un modelo en el
+                        que el vendedor ofrece descuentos significativos en productos durante un tiempo limitado.</a>
+                    <a class="panel-block" onclick="seleccio(this)">Un modelo en el
+                        que los productos se almacenan en múltiples ubicaciones para agilizar el proceso de envío.</a>
+                    <p id="mensaje5" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos5"></p>
+                </article>
+            </div>
+
+            <div class="column">
+
+                <article class="panel e is-info">
+
+                    <p class="panel-heading">¿Cuál de las siguientes estrategias de marketing en línea 
+                        es especialmente efectiva para atraer y retener clientes en el comercio electrónico? </p>
+                       
+                       
+                       
+                        
+                    <a class="panel-block" onclick="ss(this)">Publicidad impresa en revistas y periódicos.</a>
+                    <a id="correcta6" class="panel-block" onclick="ss(this)">Uso de influencers en redes sociales.</a>
+                    <a  class="panel-block" onclick="ss(this)">Carteleras publicitarias en áreas comerciales.</a>
+                    <a class="panel-block" onclick="ss(this)">Anuncios de televisión en horarios de máxima audiencia.</a>
+                    <p id="mensaje6" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos6"></p>
+                </article>
+
+                <article class="panel e is-info">
+                    <p  class="panel-heading">¿Qué es el modelo de negocio de suscripción 
+                        en el comercio electrónico y cómo beneficia a las empresas?</p>
+                        
+                    <a id="correcta7" class="panel-block" onclick="see(this)">Es un modelo en el que los clientes pagan una tarifa mensual para tener acceso a productos 
+                        o servicios de forma recurrente. Beneficia a las empresas al generar ingresos predecibles y fidelizar a los clientes.</a>
+                    <a class="panel-block" onclick="see(this)">Es un modelo en el que los productos se venden únicamente a través 
+                        de suscripciones anuales. Beneficia a las empresas al permitirles establecer precios más altos.</a>
+                    <a class="panel-block" onclick="see(this)">Es un modelo en el que los productos se venden en paquetes 
+                        especiales a precios reducidos. Beneficia a las empresas al aumentar las ventas en períodos específicos.</a>
+                    <a  class="panel-block" onclick="see(this)">Es un modelo en el que los productos se venden directamente a los 
+                        clientes a través de una plataforma de comercio electrónico. Beneficia a las empresas al reducir los costos de distribución.</a>
+                    <p id="mensaje7" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos7"></p>
+
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes tecnologías es clave para la implementación de pagos seguros en el comercio electrónico?</p>
+                    
+                    <a id="correcta8" class="panel-block" onclick="seleccc(this)">Blockchain.</a>
+                    <a class="panel-block" onclick="seleccc(this)">Inteligencia artificial.</a>
+                    <a class="panel-block" onclick="seleccc(this)">Realidad virtual.</a>
+                    <a class="panel-block" onclick="seleccc(this)">Big data.</a>
+                    <p id="mensaje8" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos8"></p>
+
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Cuál de las siguientes medidas es esencial para mejorar 
+                        la experiencia del cliente en un sitio web de comercio electrónico?</p>
+                        
+                    <a class="panel-block" onclick="seleccioo(this)">Hacer que el proceso de compra sea lo más complejo posible para evitar compras impulsivas.</a>
+                    <a  id="correcta9" class="panel-block" onclick="seleccioo(this)">Ofrecer una navegación intuitiva y un diseño responsive para diferentes dispositivos.</a>
+                    <a class="panel-block" onclick="seleccioo(this)">Limitar la variedad de productos y opciones disponibles para evitar confusión.</a>
+                    <a class="panel-block" onclick="seleccioo(this)">Solicitar información personal detallada antes de permitir realizar una compra.</a>
+                    <p id="mensaje9" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos9"></p>
+                </article>
+
+                <article class="panel e is-info">
+                    <p class="panel-heading">¿Por qué es importante el análisis de datos en el comercio electrónico y 
+                        cómo puede ayudar a las empresas?</p>
+                        
+                
+                    <a id="correcta10" class="panel-block" onclick="cop(this)">Permite comprender el comportamiento y 
+                        las preferencias de los clientes, lo que ayuda a personalizar las ofertas y mejorar la experiencia de compra.</a>
+                    <a class="panel-block" onclick="cop(this)">Ayuda a las empresas a reducir los costos de envío y mejorar la eficiencia logística.</a>
+                    <a class="panel-block" onclick="cop(this)">Facilita la automatización de los procesos de atención al cliente, mejorando la satisfacción del cliente.</a>
+                    <a class="panel-block" onclick="cop(this)">Permite a las empresas aumentar su visibilidad en los motores de búsqueda y mejorar el posicionamiento en línea.</a>
+                    <p id="mensaje10" class="panel-block"></p>
+
+                    <p class="panel-block" id="puntos10"></p>
+                </article>
+            </div>
+        </div>
+
+
+        <div class="c">
+            <p id="resultadoFinal" class="variable"></p>
+        </div>
+
+    </section>
 </body>
 
 </html>

@@ -6,40 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comercio Electronico - MaterialComplementario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="icon" href="./Imagenes/Logo.ico">
-    <link rel="stylesheet" href="./Css/c.css">
+    <link rel="stylesheet" href="./Css/MaterialComplementario.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
+      </style>
 </head>
 
 <body>
-    <!--Vinculo-->
-    <nav>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item navbar-logo" href="#">
+                  <img src="./Imagenes/logo copia.png" alt="Logo" height="300px">
+                </a>
+              </div>
+        
+            <div class="navbar-menu" style="text-transform: uppercase">
+              <div class="navbar-end">
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Index.html">Inicio</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Contenidos.html">Contenido</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Actividades.html">Actividades</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Creditos.html">Creditos</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./Evaluacion.html">Evalución</a>
+                <a class="navbar-item has-text-weight-bold has-text-black" href="./MaterialComplementario.html">Material Complementario</a>
+              </div>
+            </div>
+          </nav>
+    </header>
+<div id="todo">
 
-        <a href="./Index.html">Inicio</a>
-        <a href="./Contenidos.html">Contenido</a>
-        <a href="./Actividades.html">Actividades</a>
-        <a href="./Creditos.html">Creditos</a>
-        <a href="./Evaluacion.html">Evalución</a>
-        <a href="./MaterialComplementario.html">Material Complementario</a>
-        <a href="https://www.unicordoba.edu.co" target="_blank">Unicordoba</a>
-    </nav>
+  <section class="section">
+    <div class="container">
+      <div class="titu">
+      <h2 class="title" style="color: #F2F2F2;">Material Complementario</h2>
+       </div>
+      <div class="video-list">
+        <div class="video-container">
+          <div class="card">
+            <div class="card-content">
+              <p class="title" id="video-title">1. Introducción al comercio electrónico</p>
+              <div class="video-wrapper">
+                <div class="video-aspect-ratio">
+                  <iframe id="video-player" src="https://www.youtube.com/embed/tuG6f6BIdVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="playlist">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Lista de Videos</p>
+              <div class="button-list">
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('tuG6f6BIdVc', '1. Introducción al comercio electrónico')">1. Introducción</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('WWc0fneQ8Hk', '2. Plataformas de comercio electrónico')">2. Plataformas</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('yiDi0Dbd77o', '3. Estrategias de marketing en el comercio electrónico')">3. Estrategias de marketing</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('k-Dx4Daff0c', '4. Experiencia de compra en línea')">4. Experiencia de compra</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('Fxz8Ka7ny3M', '5. Logística y envío en el comercio electrónico')">5. Logística y envío</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('z02eMV6aYBM', '6. Seguridad y privacidad en el comercio electrónico')">6. Seguridad y privacidad</button>
+                <button class="button is-fullwidth is-medium" onclick="changeVideo('JlTLZYsxJ0w', '7. Tendencias y futuro del comercio electrónico')">7. Tendencias y futuro</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h1>Comercio Electronico - MaterialComplementario</h1>
-
-    <p>Bienvido al material Complementario sobre Comercio Electronico</p>
-
-    <br>
-    <nav>
-        <a href="#referencia">Ir a Referencias</a> <br>
-        <a href="#webgrafia">Ir a Webgrafía</a> <br>
-        <a href="#comentarios">Ir a Comentarios</a> <br>
-    </nav>
-    <a name="referencias"></a>
-    <h2>Referencias</h2>
-    <a name="webgrafia"></a>
-    <h2>Webgrafia</h2>
-    <a name="comentarios"></a>
-    <h2>Comentarios</h2>
-
+  <script>
+    function changeVideo(videoId, videoTitle) {
+      document.getElementById("video-player").src = "https://www.youtube.com/embed/" + videoId;
+      document.getElementById("video-title").textContent = videoTitle;
+    }
+  </script>
+  
+  
+</div>
 
 
 </body>

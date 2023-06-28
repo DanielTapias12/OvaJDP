@@ -1,9 +1,8 @@
 
 /* texto del cuerpo*/
 body {
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    background-image: url(/ovaJdp/Imagenes/5559852.jpg);
+    background-image: url(/Imagenes/5559852.jpg);
     background-size: no-repeat;
     background-size: cover;
     /*el ancho y largo de un elemento, que tes venga en cuenta cada borde y relleno*/
@@ -24,7 +23,7 @@ body {
 /*Maneja el borde del menu*/
 nav {
     /* Define el color de los elementos */
-    background:aquamarine;
+    background: #3845DB;
     /* Define la altura */
     height: 70px;
     /* Define el ancho*/ 
@@ -43,7 +42,7 @@ nav {
 }
 /*Texto del menu*/
 nav a {
-    color: black;
+    color: #000000;
     /* dimensiones de la letra */
     font-size: 18px;
     padding: 7px ;
@@ -62,8 +61,8 @@ nav a {
  ul a.active, 
  /* hover: efectua un segundo estado*/
  ul a:hover {
- background-color: blue;
- color: aliceblue;
+ background-color: #DB860B;
+ color: #F2F2F2;
     transition: .5s;
 }
 /*Posición de los elementos*/
@@ -74,15 +73,7 @@ nav ul li{
     line-height: 65px; 
     margin: 0 5px;
 }
-/**/
-/*nav ul{
-   /*  Tipo de visualización
-    display: inline-block;*/
-    /* Altura de una casilla
-    */
-    /*margen de los lados /
-  
-}*/
+
 /* Mover texto hacia abajo*/
 div.parte2{  
     text-align: justify;
