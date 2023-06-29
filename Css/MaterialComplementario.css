@@ -1,11 +1,15 @@
 .navbar {
-    background-color: #77b4e9; /* Fondo azul bajito */
+    background-color: #0477BF; /* Fondo azul bajito */
     position: fixed; /* Fija en la parte superior */
     top: 0;
     width: 100%;
     height: 10%;
   }
   
+  .titu{
+    margin: 10px;
+    padding: 20px;
+  }
 .navbar-logo {
       display: flex; /* Permite flexibilidad en la altura */
       align-items: center; /* Centra verticalmente el logo */
@@ -21,6 +25,7 @@
   #todo {
     position: relative;
     top: 20px;
+    background-color: #3845DB;
   }
   .video-list {
     display: flex;

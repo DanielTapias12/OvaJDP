@@ -1,0 +1,53 @@
+nav {
+    /* Define el color de los elementos */
+    background: #3845DB;
+    /* Define la altura */
+    height: 70px;
+    /* Define el ancho*/ 
+    width: 100%; 
+   
+}
+/*Ubicación del objeto*/
+.enlace {
+    position: absolute;
+   padding: 10px 30px;
+}
+/*Tamaño del objeto*/
+.logo {
+    /* Altura*/
+    height: 45px;
+}
+/*Texto del menu*/
+nav a {
+    color: black;
+    /* dimensiones de la letra */
+    font-size: 18px;
+    padding: 7px ;
+    /* Tipo de redondeo de la esquina*/
+    border-radius: 3px;
+    /* Cambio de tamaño, La mayuscula*/
+    text-transform: uppercase;
+    cursor: pointer; 
+     /* Define si el texto tiene subrayado */
+       text-decoration: none;
+   /*  line-height: 80px;
+    margin-right: 40px;*/
+
+}
+/*El relleno*/
+ ul a.active, 
+ /* hover: efectua un segundo estado*/
+ ul a:hover {
+    background-color: #DB860B;
+    color: #F2F2F2;
+    transition: .5s;
+}
+/*Posición de los elementos*/
+nav ul li{
+    /*Ubicación de un elemento */
+   float: right;
+    margin-right: 20px;
+    line-height: 65px; 
+    margin: 0 5px;
+}
+
