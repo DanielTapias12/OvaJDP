@@ -1,15 +1,15 @@
+
+body{
+  background: #F29F05;
+}
 .navbar {
-    background-color: #0477BF; /* Fondo azul bajito */
+    background-color: #3845DB; /* Fondo azul bajito */
     position: fixed; /* Fija en la parte superior */
     top: 0;
     width: 100%;
     height: 10%;
   }
   
-  .titu{
-    margin: 10px;
-    padding: 20px;
-  }
 .navbar-logo {
       display: flex; /* Permite flexibilidad en la altura */
       align-items: center; /* Centra verticalmente el logo */
@@ -24,18 +24,21 @@
   }
   #todo {
     position: relative;
-    top: 20px;
-    background-color: #3845DB;
+    top: 40px;
   }
   .video-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .video-container {
+.titu{
+  padding: 20px;
+}
+
+.video-container {
     flex: 7.5;
     padding-right: 20px;
-  }
+}
 
   .playlist {
     flex: 2.5;
