@@ -19,11 +19,21 @@
 <!--Cuerpo-->
 
 <body>
+    <script>
+        // JavaScript to handle responsive menu
+        const menuIcon = document.querySelector(".menu-icon");
+        const menu = document.querySelector(".menu");
+    
+        menuIcon.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+   
     <div class="contenedor">
         <header>
             <nav>
                 <a href="#" class="enlace"><img src="./Imagenes/logo copia.png" alt="" class="logo"></a>
-                <ul>
+                <ul class="menu">
                     <li><a href="./Index.html">Inicio</a></li>
                     <li><a href="./Contenidos.html">Contenido</a></li>
                     <li><a class="active" href="./Actividades.html">Actividades</a></li>
@@ -31,9 +41,11 @@
                     <li><a href="./Evaluacion.html">Evalución</a></li>
                     <li><a href="./MaterialComplementario.html">Material Complementario</a></li>
                 </ul>
+                <div class="menu-icon">&#9776;</div>
             </nav>
         </header>
     </div>
+    
 
 
 

@@ -1,73 +1,69 @@
 @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
 /* texto del cuerpo*/
-body {
+/* Reset some default styles */
+body, html {
     margin: 0;
-    /*el ancho y largo de un elemento, que tenga en cuenta cada borde y relleno*/
-    box-sizing: border-box;
-}
-/*Sobre todo*/
- * {
-   /* Relleno de los cuatro lados*/
     padding: 0;
-    /* margenes de los cuatro lados */
-    margin: 0;
-    /* Define el tipo de lista*/
-    list-style: none;
-    /* Calcula el ancho y largo de los elementos, especifica el valor de los bordes*/    
 }
-/*Maneja el borde del menu*/
-nav {
-    /* Define el color de los elementos */
-    background: #3845DB;
-    /* Define la altura */
-    height: 70px;
-    /* Define el ancho*/ 
-    width: 100%; 
-   
-}
-/*Ubicación del objeto*/
-.enlace {
-    position: absolute;
-   padding: 10px 30px;
-}
-/*Tamaño del objeto*/
-.logo {
-    /* Altura*/
-    height: 45px;
-}
-/*Texto del menu*/
-nav a {
-    color: black;
-    /* dimensiones de la letra */
-    font-size: 18px;
-    padding: 7px ;
-    /* Tipo de redondeo de la esquina*/
-    border-radius: 3px;
-    /* Cambio de tamaño, La mayuscula*/
-    text-transform: uppercase;
-    cursor: pointer; 
-     /* Define si el texto tiene subrayado */
-       text-decoration: none;
-   /*  line-height: 80px;
-    margin-right: 40px;*/
 
+/* Navbar styles */
+.contenedor {
+    background-color: #0477BF;
+    padding: 15px;
 }
-/*El relleno*/
- ul a.active, 
- /* hover: efectua un segundo estado*/
- ul a:hover {
-    background-color: #DB860B;
-    color: #F2F2F2;
-    transition: .5s;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-/*Posición de los elementos*/
-nav ul li{
-    /*Ubicación de un elemento */
-   float: right;
-    margin-right: 20px;
-    line-height: 65px; 
-    margin: 0 5px;
+
+.logo {
+    max-height: 100px; /* Adjust the height as needed */
 }
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
 
 /* Pestañas (tabs) */
 /* Contiene todo el formato*/
