@@ -1,53 +1,103 @@
-nav {
-    /* Define el color de los elementos */
-    background: #3845DB;
-    /* Define la altura */
-    height: 70px;
-    /* Define el ancho*/ 
-    width: 100%; 
-   
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Default styles for the container */
+  .contenedor {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0477BF;
+    padding: 15px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-menu li {
+    margin-right: 15px;
+  }
+  
+  .navbar-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar-menu li a.active {
+    font-weight: bold;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    padding: 20px 0;
+  }
+  
+  /* Box CTA styles */
+  .box.cta {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Card styles */
+  .card.is-shady {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .card.is-shady:hover {
+    box-shadow: 0 8px 16px rgba(0,0, 0, 0.2);
 }
-/*Ubicación del objeto*/
-.enlace {
-    position: absolute;
-   padding: 10px 30px;
-}
-/*Tamaño del objeto*/
-.logo {
-    /* Altura*/
-    height: 45px;
-}
-/*Texto del menu*/
-nav a {
-    color: black;
-    /* dimensiones de la letra */
-    font-size: 18px;
-    padding: 7px ;
-    /* Tipo de redondeo de la esquina*/
-    border-radius: 3px;
-    /* Cambio de tamaño, La mayuscula*/
-    text-transform: uppercase;
-    cursor: pointer; 
-     /* Define si el texto tiene subrayado */
-       text-decoration: none;
-   /*  line-height: 80px;
-    margin-right: 40px;*/
 
-}
-/*El relleno*/
- ul a.active, 
- /* hover: efectua un segundo estado*/
- ul a:hover {
-    background-color: #DB860B;
-    color: #F2F2F2;
-    transition: .5s;
-}
-/*Posición de los elementos*/
-nav ul li{
-    /*Ubicación de un elemento */
-   float: right;
-    margin-right: 20px;
-    line-height: 65px; 
-    margin: 0 5px;
+.card-image img {
+  object-fit: cover;
 }
 
+.card-content {
+  padding: 15px;
+}
+
+/* Responsive styles for columns and cards */
+.columns.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+@media screen and (min-width: 769px) {
+  .columns.features {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns.features .column {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+  

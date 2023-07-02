@@ -15,95 +15,74 @@ body {
     list-style: none;
     /* Calcula el ancho y largo de los elementos, especifica el valor de los bordes*/    
 }
-/* Default styles for the menu */
+/*Maneja el borde del menu*/
 nav {
+    /* Define el color de los elementos */
     background: #3845DB;
+    /* Define la altura */
     height: 70px;
-    width: 100%;
-    position: fixed;
+    /* Define el ancho*/ 
+    width: 100%; 
+   
 }
-
+/*Ubicación del objeto*/
 .enlace {
     position: absolute;
-    padding: 10px 30px;
+   padding: 10px 30px;
 }
-
+/*Tamaño del objeto*/
 .logo {
+    /* Altura*/
     height: 45px;
 }
-
+/*Texto del menu*/
 nav a {
     color: black;
+    /* dimensiones de la letra */
     font-size: 18px;
-    padding: 7px;
+    padding: 7px ;
+    /* Tipo de redondeo de la esquina*/
     border-radius: 3px;
+    /* Cambio de tamaño, La mayuscula*/
     text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-}
+    cursor: pointer; 
+     /* Define si el texto tiene subrayado */
+       text-decoration: none;
+   /*  line-height: 80px;
+    margin-right: 40px;*/
 
-ul a.active,
-ul a:hover {
+}
+/*El relleno*/
+ ul a.active, 
+ /* hover: efectua un segundo estado*/
+ ul a:hover {
     background-color: #DB860B;
     color: #F2F2F2;
     transition: .5s;
 }
-
-nav ul li {
-    float: right;
+/*Posición de los elementos*/
+nav ul li{
+    /*Ubicación de un elemento */
+   float: right;
     margin-right: 20px;
-    line-height: 65px;
+    line-height: 65px; 
     margin: 0 5px;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    nav {
-        height: auto;
-    }
-
-    .enlace {
-        position: static;
-        padding: 10px 20px;
-    }
-
-    nav a {
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .container {
-        margin-top: 70px; /* Adjust the top margin to accommodate the fixed navbar */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        height: 30px;
-    }
-
-    .enlace {
-        padding: 10px;
-    }
-
-    nav a {
-        font-size: 14px;
-        padding: 5px;
-    }
-}
-
-
-
-
-/* Default styles for the tabs */
+/* Pestañas (tabs) */
+/* Contiene todo el formato*/
 .container {
+    width: 100%;
+    /* Se le realizo cambio 30/05/2023*/
     max-width: 100%;
     margin: auto;
     margin-top: 0px;
+
 }
 
 .lbl-menu {
     background: #234;
+
 }
 
 .lbl-menu label {
@@ -113,15 +92,16 @@ nav ul li {
     cursor: pointer;
     transition: all 400ms ease;
 }
-
+/* segundo estado*/
 .lbl-menu label:hover {
     background: #97a5b2;
+
 }
 
 .content {
     position: relative;
 }
-
+/* Maneja la ventaja de información*/
 .content div {
     position: absolute;
     line-height: 1.8;
@@ -132,6 +112,12 @@ nav ul li {
     padding: 30px;
     background: white;
     padding-bottom: 40px;
+}
+
+#radio1,
+#radio2 {
+    display: none;
+    height: auto;
 }
 
 #radio1:checked~.tab1,
@@ -146,35 +132,4 @@ a.raya {
     text-decoration: none;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .lbl-menu label {
-        padding: 15px;
-    }
-
-    .content div {
-        padding: 15px;
-        padding-bottom: 30px;
-    }
-
-    .iframe-wrapper iframe {
-        width: 100%;
-        height: 250px; /* You can adjust the height as needed for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .lbl-menu label {
-        padding: 10px;
-    }
-
-    .content div {
-        padding: 10px;
-        padding-bottom: 20px;
-    }
-
-    .iframe-wrapper iframe {
-        width: 100%;
-        height: 200px; /* You can adjust the height as needed for even smaller screens */
-    }
-}
+/* ----------------------------- */
