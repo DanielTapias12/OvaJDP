@@ -96,20 +96,16 @@ nav ul li {
 
 
 
-/* Pestañas (tabs) */
-/* Contiene todo el formato*/
+/* Default styles for the tabs */
 .container {
     width: 100%;
-    /* Se le realizo cambio 30/05/2023*/
     max-width: 100%;
     margin: auto;
     margin-top: 0px;
-
 }
 
 .lbl-menu {
     background: #234;
-
 }
 
 .lbl-menu label {
@@ -119,16 +115,15 @@ nav ul li {
     cursor: pointer;
     transition: all 400ms ease;
 }
-/* segundo estado*/
+
 .lbl-menu label:hover {
     background: #97a5b2;
-
 }
 
 .content {
     position: relative;
 }
-/* Maneja la ventaja de información*/
+
 .content div {
     position: absolute;
     line-height: 1.8;
@@ -158,5 +153,29 @@ nav ul li {
 a.raya {
     text-decoration: none;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .lbl-menu label {
+        padding: 15px;
+    }
+
+    .content div {
+        padding: 15px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lbl-menu label {
+        padding: 10px;
+    }
+
+    .content div {
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+}
+
 
 /* ----------------------------- */
