@@ -19,33 +19,40 @@
 <!--Cuerpo-->
 
 <body>
-    <script>
-        // JavaScript to handle responsive menu
-        const menuIcon = document.querySelector(".menu-icon");
-        const menu = document.querySelector(".menu");
-    
-        menuIcon.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-    </script>
-   
     <div class="contenedor">
         <header>
             <nav>
                 <a href="#" class="enlace"><img src="./Imagenes/logo copia.png" alt="" class="logo"></a>
-                <ul class="menu">
-                    <li><a href="./Index.html">Inicio</a></li>
+                <ul>
+                    <li><a class="active" href="./Index.html">Inicio</a></li>
                     <li><a href="./Contenidos.html">Contenido</a></li>
-                    <li><a class="active" href="./Actividades.html">Actividades</a></li>
+                    <li><a href="./Actividades.html">Actividades</a></li>
                     <li><a href="./Creditos.html">Creditos</a></li>
                     <li><a href="./Evaluacion.html">Evalución</a></li>
                     <li><a href="./MaterialComplementario.html">Material Complementario</a></li>
                 </ul>
-                <div class="menu-icon">&#9776;</div>
             </nav>
         </header>
     </div>
-    <!----
+
+
+
+
+    <!--Representa el contenido prinpical del body--->
+    <main>
+        <div class="container">
+            <div class="lbl-menu">
+                <label for="radio1">ACTIVIDAD 1</label>
+                <label for="radio2">ACTIVIDAD 2</label>
+            </div>
+
+            <section>
+                <div class="content">
+                    <input type="radio" name="radio" id="radio1" checked>
+                    <div class="tab1">
+
+                        <h2>ACTIVIDAD 1</h2>
+
                         <iframe src="https://h5p.org/h5p/embed/1377100" width="100%" height="100%" frameborder="0"
                             allowfullscreen="allowfullscreen"
                             allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
@@ -54,7 +61,22 @@
                             charset="UTF-8"></script>
 
 
-             -->      
+                    </div>
+                    <input type="radio" name="radio" id="radio2">
+                    <div class="tab2">
+                        <h2>ACTIVIDAD 2</h2>
+                        <iframe src="https://h5p.org/h5p/embed/1377082" width="1090" height="339" frameborder="0"
+                            allowfullscreen="allowfullscreen"
+                            allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                            title="e-comerce"></iframe>
+                        <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js"
+                            charset="UTF-8"></script>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>

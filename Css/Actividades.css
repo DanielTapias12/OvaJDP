@@ -1,69 +1,88 @@
 @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
 /* texto del cuerpo*/
-/* Reset some default styles */
-body, html {
-    margin: 0;
-    padding: 0;
-}
 
-/* Navbar styles */
-.contenedor {
-    background-color: #0477BF;
-    padding: 15px;
-}
-
+/*Maneja el borde del menu*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* Define el color de los elementos */
+    background: #3845DB;
+    /* Define la altura */
+    height: 70px;
+    /* Define el ancho*/ 
+    width: 100%; 
+   position:relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
 }
 
+/*Ubicación del objeto*/
+.enlace {
+   padding: 10px;
+}
+/*Tamaño del objeto*/
 .logo {
-    max-height: 100px; /* Adjust the height as needed */
+    /* Altura*/
+    height: 45px;
 }
-
-.menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin: 0 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+/*Texto del menu*/
+nav a {
+    color: #000000;
+    /* dimensiones de la letra */
+    font-size: 18px;
+    padding: 7px ;
+    /* Tipo de redondeo de la esquina*/
+    border-radius: 3px;
+    /* Cambio de tamaño, La mayuscula*/
     text-transform: uppercase;
+    cursor: pointer; 
+     /* Define si el texto tiene subrayado */
+       text-decoration: none;
+   /*  line-height: 80px;
+    margin-right: 40px;*/
+
 }
 
-.menu-icon {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Media queries for responsiveness */
+/* Responsive styles */
 @media screen and (max-width: 768px) {
-    .menu {
-        display: none;
+    /* Adjust the logo size for smaller screens */
+    .logo {
+        height: 35px;
+    }
+
+    /* Convert the menu into a vertical layout */
+    nav {
         flex-direction: column;
-        align-items: center;
+        height: auto;
     }
 
-    .menu.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
+    nav ul li {
+        margin: 10px 0;
+        float: none;
     }
 }
 
+
+
+/*El relleno*/
+ ul a.active, 
+ /* hover: efectua un segundo estado*/
+ ul a:hover {
+ background-color: #DB860B;
+ color: #F2F2F2;
+    transition: .5s;
+}
+
+
+
+/*Posición de los elementos*/
+nav ul li{
+    /*Ubicación de un elemento */
+   float: right;
+    margin-right: 20px;
+    line-height: 65px; 
+    margin: 0 5px;
+}
 
 /* Pestañas (tabs) */
 /* Contiene todo el formato*/
