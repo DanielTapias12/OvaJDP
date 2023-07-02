@@ -12,10 +12,6 @@ body {
 }
 /*Sobre todo*/
  * {
-   /* Relleno de los cuatro lados*/
-    padding: 0;
-    /* margenes de los cuatro lados */
-    margin: 0;
     /* Define el tipo de lista*/
     list-style: none;
     /* Calcula el ancho y largo de los elementos, especifica el valor de los bordes*/    
@@ -28,12 +24,16 @@ nav {
     height: 70px;
     /* Define el ancho*/ 
     width: 100%; 
-   position: fixed;
+   position:relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
 }
+
 /*Ubicación del objeto*/
 .enlace {
-    position: absolute;
-   padding: 10px 30px;
+   padding: 10px;
 }
 /*Tamaño del objeto*/
 .logo {
@@ -57,6 +57,28 @@ nav a {
     margin-right: 40px;*/
 
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust the logo size for smaller screens */
+    .logo {
+        height: 35px;
+    }
+
+    /* Convert the menu into a vertical layout */
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        float: none;
+    }
+}
+
+
+
 /*El relleno*/
  ul a.active, 
  /* hover: efectua un segundo estado*/
@@ -65,6 +87,9 @@ nav a {
  color: #F2F2F2;
     transition: .5s;
 }
+
+
+
 /*Posición de los elementos*/
 nav ul li{
     /*Ubicación de un elemento */
@@ -85,7 +110,7 @@ div.parte2{
 .parte1{
     margin-right: 0;
     width: 40%;
-    height: 80%;
+    height: 10%;
     position: relative;
     right: 13px;
    
@@ -93,5 +118,4 @@ div.parte2{
 #todo{
     transform: translate(1%,28% );
     display: flex;
-    padding:30 px;
 }

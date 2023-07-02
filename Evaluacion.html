@@ -12,9 +12,39 @@
     <style>
         @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
         </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Include Bulma's JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
 </head>
 
 <body>
+<!-- JavaScript code for handling the responsive behavior -->
+<script>
+    // Wait for the DOM to be ready
+    $(document).ready(function() {
+        // Get the burger element
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any burger elements
+        if ($navbarBurgers.length > 0) {
+            // Add a click event listener to each burger
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function() {
+                    // Get the target from the 'data-target' attribute
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+
+                    // Toggle the 'is-active' class on both the burger and the target
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script>
+
+
+
     <nav class="navbar" style="background-color: #3845DB;">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
