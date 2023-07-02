@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
 /* texto del cuerpo*/
+body {
+    margin: 0;
+    /*el ancho y largo de un elemento, que tes venga en cuenta cada borde y relleno*/
+    box-sizing: border-box;
 
+}
+/*Sobre todo*/
+ * {
+    /* Define el tipo de lista*/
+    list-style: none;
+    /* Calcula el ancho y largo de los elementos, especifica el valor de los bordes*/    
+}
 /*Maneja el borde del menu*/
 nav {
     /* Define el color de los elementos */
