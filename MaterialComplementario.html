@@ -17,27 +17,35 @@
 </head>
 
 <body>
+  <script>
+    // JavaScript to handle responsive menu
+    const navbarMenu = document.querySelector(".navbar-menu");
+    const toggleNavbarMenu = () => navbarMenu.classList.toggle("active");
+    document.querySelector(".navbar-brand").addEventListener("click", toggleNavbarMenu);
+  </script>
+  
+  <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item navbar-logo" href="#">
+          <img src="./Imagenes/logo copia.png" alt="Logo" height="300px">
+        </a>
+      </div>
+  
+      <div class="navbar-menu" style="text-transform: uppercase">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./Index.html">Inicio</a>
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./Contenidos.html">Contenido</a>
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./Actividades.html">Actividades</a>
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./Creditos.html">Creditos</a>
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./Evaluacion.html">Evalución</a>
+          <a class="navbar-item has-text-weight-bold has-text-black" href="./MaterialComplementario.html">Material Complementario</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
 
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item navbar-logo" href="#">
-                  <img src="./Imagenes/logo copia.png" alt="Logo" height="300px">
-                </a>
-              </div>
-        
-            <div class="navbar-menu" style="text-transform: uppercase">
-              <div class="navbar-end">
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./Index.html">Inicio</a>
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./Contenidos.html">Contenido</a>
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./Actividades.html">Actividades</a>
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./Creditos.html">Creditos</a>
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./Evaluacion.html">Evalución</a>
-                <a class="navbar-item has-text-weight-bold has-text-black" href="./MaterialComplementario.html">Material Complementario</a>
-              </div>
-            </div>
-          </nav>
-    </header>
 <div id="todo">
 
   <section class="section">

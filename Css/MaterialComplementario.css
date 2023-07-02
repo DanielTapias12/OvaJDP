@@ -1,27 +1,56 @@
-
-body{
-  background: #F29F05;
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
 }
+
+/* Navbar styles */
 .navbar {
-    background-color: #3845DB; /* Fondo azul bajito */
-    position: fixed; /* Fija en la parte superior */
-    top: 0;
-    width: 100%;
-    height: 10%;
-  }
-  
-.navbar-logo {
-      display: flex; /* Permite flexibilidad en la altura */
-      align-items: center; /* Centra verticalmente el logo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0477BF;
+  padding: 15px;
 }
 
-  .navbar-brand {
-    margin-left: 20px; /* Espacio para el logo flotante a la izquierda */
-  }
+.navbar-brand .navbar-item img {
+  max-height: 100px; /* Adjust the height as needed */
+}
 
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-menu.active .navbar-end {
+  margin-top: 20px;
+}
+
+.navbar-item {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
   .navbar-menu {
-    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    display: flex;
+    align-items: center;
   }
+}
+
+
+
+
+
   #todo {
     position: relative;
     top: 40px;
