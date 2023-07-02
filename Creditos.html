@@ -12,37 +12,83 @@
     <style>
         @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
         </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Bulma's JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
 </head>
 
 <body>
+<!-- JavaScript code for handling the responsive behavior -->
+<script>
+// Wait for the DOM to be ready
+$(document).ready(function() {
+// Get the burger element
+var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any burger elements
+if ($navbarBurgers.length > 0) {
+    // Add a click event listener to each burger
+    $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function() {
+            // Get the target from the 'data-target' attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the 'is-active' class on both the burger and the target
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        });
+    });
+}
+});
+</script>
 
 
-    <body>
-        <div class="contenedor">
-            <header>
-                <nav class="navbar">
-                    <a href="#" class="enlace navbar-logo"><img src="./Imagenes/logo copia.png" alt="" class="logo"></a>
-                    <ul class="navbar-menu">
-                        <li><a href="./Index.html">Inicio</a></li>
-                        <li><a href="./Contenidos.html">Contenido</a></li>
-                        <li><a class="active" href="./Actividades.html">Actividades</a></li>
-                        <li><a href="./Creditos.html">Creditos</a></li>
-                        <li><a href="./Evaluacion.html">Evaluación</a></li>
-                        <li><a href="./MaterialComplementario.html">Material Complementario</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        
-        <section class="hero is-white is-small" style="background-color: #0477BF;">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <p class="title">
-                        Creditos
-                    </p>
-                </div>
+
+<nav class="navbar" style="background-color: #3845DB;">
+<div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+        <img src="./Imagenes/logo copia.png" alt="Bulma: a modern CSS framework based on Flexbox" width="95"
+            height="24">
+    </a>
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+        <a class="navbar-item" style="background-color: #F2F2F2;" href="./Index.html">
+            INICIO
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-active" href="./Evaluacion.html">
+                EVALUACIÓN
+            </a>
+            <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="./Contenidos.html">
+                    CONTENIDO
+                </a>
+                <a class="navbar-item" href="./Actividades.html">
+                    ACTIVIDADES
+                </a>
+
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="./MaterialComplementario.html">
+                    MATERIAL COMPLEMENTARIO
+                </a>
+                <a class="navbar-item" href="./Creditos.html">
+                    CREDITOS
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
+
+</div>
+</nav>
+     
         
         <div class="box cta">
             <p class="has-text-centered">
