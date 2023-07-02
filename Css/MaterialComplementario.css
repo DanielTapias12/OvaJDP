@@ -45,6 +45,7 @@ body{
 }
 
 @media screen and (max-width: 480px) {
+  
   /* Further adjustments for even smaller screens */
   .navbar {
       height: 6%;
