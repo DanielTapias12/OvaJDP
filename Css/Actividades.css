@@ -19,7 +19,7 @@ nav {
     /* Define la altura */
     height: 70px;
     /* Define el ancho*/ 
-    width: 100%; 
+    width: 97.5%; 
    position:relative;
    display: flex;
    align-items: center;
@@ -64,7 +64,7 @@ nav a {
     /* Convert the menu into a vertical layout */
     nav {
         flex-direction: column;
-        height: auto;
+        height: 100%;
     }
 
     nav ul li {
@@ -94,8 +94,6 @@ nav ul li{
     line-height: 65px; 
     margin: 0 5px;
 }
-
-
 
 /* Pestañas (tabs) */
 /* Contiene todo el formato */
@@ -135,7 +133,7 @@ nav ul li{
     opacity: 0;
     visibility: hidden;
     transform: scale(0.90);
-    padding: 30px;
+    padding: 10px;
     background: white;
     padding-bottom: 40px;
 }
