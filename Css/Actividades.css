@@ -1,138 +1,177 @@
 @import url('https://fonts.googleapis.com/css2? familia= Abierto+Sans:ital,peso@0,500;1,300 & display=swap');
 /* texto del cuerpo*/
-/* Estilos generales */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+    /*el ancho y largo de un elemento, que tes venga en cuenta cada borde y relleno*/
+    box-sizing: border-box;
 
-/* Estilos para el menú de navegación */
-.contenedor {
-    background-color: #333;
-    padding: 10px;
 }
+/*Sobre todo*/
+ * {
+    /* Define el tipo de lista*/
+    list-style: none;
+    /* Calcula el ancho y largo de los elementos, especifica el valor de los bordes*/    
+}
+/*Maneja el borde del menu*/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* Define el color de los elementos */
+    background: #3845DB;
+    /* Define la altura */
+    height: 70px;
+    /* Define el ancho*/ 
+    width: 97.5%; 
+   position:relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
 }
-ul {
-    display: flex;
-    list-style-type: none;
+
+/*Ubicación del objeto*/
+.enlace {
+   padding: 10px;
 }
-li {
-    margin-left: 20px;
-}
-a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-a.active {
-    font-weight: bold;
-}
+/*Tamaño del objeto*/
 .logo {
-    height: 50px;
+    /* Altura*/
+    height: 45px;
+}
+/*Texto del menu*/
+nav a {
+    color: #000000;
+    /* dimensiones de la letra */
+    font-size: 18px;
+    padding: 7px ;
+    /* Tipo de redondeo de la esquina*/
+    border-radius: 3px;
+    /* Cambio de tamaño, La mayuscula*/
+    text-transform: uppercase;
+    cursor: pointer; 
+     /* Define si el texto tiene subrayado */
+       text-decoration: none;
+   /*  line-height: 80px;
+    margin-right: 40px;*/
+
 }
 
-/* Estilos para la sección de actividades */
-.container {
-    padding: 20px;
-}
-.lbl-menu {
-    display: flex;
-    justify-content: center;
-}
-label {
-    padding: 10px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-section {
-    margin-top: 20px;
-}
-iframe {
-    width: 100%;
-}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust the logo size for smaller screens */
+    .logo {
+        height: 35px;
+    }
 
-/* Estilos para tabletas */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        margin: 0 auto;
-    }
-    .lbl-menu {
-        justify-content: space-between;
-    }
-}
-
-/* Estilos para móviles */
-@media (max-width: 767px) {
-    ul {
-        display: none;
-        flex-direction: column;
-        background-color: #555;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 0;
-        z-index: 1;
-    }
-    li {
-        margin: 0;
-    }
-    a {
-        display: block;
-        padding: 10px;
-        color: white;
-    }
+    /* Convert the menu into a vertical layout */
     nav {
-        position: relative;
+        flex-direction: column;
+        height: 100%;
     }
-    #hamburguer {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 2;
-        display: none;
-    }
-    #hamburguer span,
-    #hamburguer span::before,
-    #hamburguer span::after {
-        display: block;
-        background-color: white;
-        height: 3px;
-        width: 25px;
-        border-radius: 3px;
-    }
-    #hamburguer span::before {
-        content: "";
-        margin-top: 7px;
-    }
-    #hamburguer span::after {
-        content: "";
-        margin-top: 7px;
-    }
-    #hamburguer.active {
-        background-color: red;
-    }
-    #hamburguer.active span {
-        background-color: transparent;
-    }
-    #hamburguer.active span::before {
-        transform: rotate(45deg);
-        margin-top: 0;
-    }
-    #hamburguer.active span::after {
-        transform: rotate(-45deg);
-        margin-top: 0;
-    }
-    #hamburguer.active+ul {
-        display: flex;
+
+    nav ul li {
+        margin: 10px 0;
+        float: none;
     }
 }
+
+
+
+/*El relleno*/
+ ul a.active, 
+ /* hover: efectua un segundo estado*/
+ ul a:hover {
+ background-color: #DB860B;
+ color: #F2F2F2;
+    transition: .5s;
+}
+
+
+
+/*Posición de los elementos*/
+nav ul li{
+    /*Ubicación de un elemento */
+   float: right;
+    margin-right: 20px;
+    line-height: 65px; 
+    margin: 0 5px;
+}
+
+/* Pestañas (tabs) */
+/* Contiene todo el formato */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.lbl-menu {
+    background: #234;
+}
+
+.lbl-menu label {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+/* segundo estado */
+.lbl-menu label:hover {
+    background: #97a5b2;
+}
+
+.content {
+    position: relative;
+}
+
+/* Maneja la ventaja de información */
+.content div {
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 10px;
+    background: white;
+    padding-bottom: 40px;
+}
+
+#radio1,
+#radio2 {
+    display: none;
+    height: auto;
+}
+
+#radio1:checked~.tab1,
+#radio2:checked~.tab2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    width: 97%;
+}
+
+a.raya {
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .lbl-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lbl-menu label {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .content div {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
+/* ----------------------------- */
