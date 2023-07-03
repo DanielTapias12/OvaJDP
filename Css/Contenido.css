@@ -93,38 +93,8 @@ main > ol.lis{
     list-style: none;
 }
 
-/* Estilos para el contenido de la sección */
-.txt {
-    padding: 20px;
-}
 
-.txt h4 {
-    margin-top: 0;
-}
-
-.txt p {
-    margin-bottom: 20px;
-}
-
-/* Estilos para la imagen */
-img.float-right {
-    float: right;
-    margin-left: 20px;
-}
-
-/* Estilos para dispositivos con pantalla más pequeña */
-@media (max-width: 768px) {
-    .txt {
-        padding: 10px;
-    }
-
-    img.float-right {
-        float: none;
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-}
-/*Acomodar el texto con la imagen
+/*Acomodar el texto con la imagen*/
 .textoallado {
     display: flex;
     justify-content: center;
@@ -138,7 +108,7 @@ img.float-right {
 
 .txt>p>a {
     text-decoration: none;
-}*/
+}
 
 /*--------------------------------*/
 
