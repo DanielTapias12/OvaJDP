@@ -1,3 +1,10 @@
+@media (max-width: 767px){
+    body{
+        display: none;
+    }
+}
+
+
 .secu{
     background-color: #B3DEE8;
 }
